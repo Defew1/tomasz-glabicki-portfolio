@@ -1,2 +1,2 @@
-# Tomasz-G-bicki-portfolio-
+# tomasz-glabicki-portfolio-
 strona pod moje portfolio 
