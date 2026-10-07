@@ -8,13 +8,13 @@
   <meta name="keywords" content="Tomasz Głąbicki, Tomasz Głąbicki Radom, Tomasz Głąbicki film, Tomasz Głąbicki fotografia, Tomasz Głąbicki FILMFORUM, Tomasz Głąbicki Żółw, Tomasz Głąbicki Instagram">
   <meta name="author" content="Tomasz Głąbicki">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://defew1.github.io/tomasz-glabicki-portfolio/">
+  <link rel="canonical" href="https://TWOJA-DOMENA.pl/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tomasz Głąbicki — film, fotografia i projekty audiowizualne">
   <meta property="og:description" content="Tomasz Głąbicki — twórca związany z filmem, fotografią i projektami audiowizualnymi. Radom, Polska.">
-  <meta property="og:url" content="https://defew1.github.io/tomasz-glabicki-portfolio/">
+  <meta property="og:url" content="https://TWOJA-DOMENA.pl/">
   <meta property="og:locale" content="pl_PL">
   <meta property="og:site_name" content="Tomasz Głąbicki">
 
@@ -31,7 +31,7 @@
     "name": "Tomasz Głąbicki",
     "alternateName": "tomasz.g.16",
     "description": "Tomasz Głąbicki — twórca związany z filmem, fotografią i projektami audiowizualnymi z Radomia.",
-    "url": "https://defew1.github.io/tomasz-glabicki-portfolio/",
+    "url": "https://TWOJA-DOMENA.pl/",
     "sameAs": [
       "https://www.instagram.com/tomasz.g.16/",
       "https://filmforum.pl/zolw-etiuda-o-hazardzie-online/"
@@ -359,14 +359,46 @@
       grid-template-columns: 1fr 1.2fr;
       gap: 3rem;
       align-items: center;
-      padding: 2rem 0;
+      padding: 2.5rem 0;
+    }
+
+    .project-card + .project-card {
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+      padding-top: 3.5rem;
     }
 
     .project-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-visual {
+      aspect-ratio: 16/10;
+      background: #1a1a1a;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-placeholder {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .project-placeholder span {
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      opacity: 0.4;
+    }
 
     .project-info {
       padding: 1rem 0;
@@ -425,6 +457,12 @@
 
     .project-link:hover svg {
       transform: translateX(3px);
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem 1.75rem;
     }
 
     /* Instagram */
@@ -642,21 +680,52 @@
     <div class="container">
       <p class="section-label reveal">Portfolio</p>
       <h2 class="section-title reveal">Projekty</h2>
+
+      <!-- Projekt 1: Żółw -->
       <article class="project-card reveal">
         <div class="project-visual">
-  <img src="zdjecie-zolw.png" alt="Kadr z etiudy filmowej Żółw, 2026" loading="lazy">
+          <div class="project-placeholder">
+            <span>◉</span>
+            Zdjęcie projektu
+          </div>
         </div>
         <div class="project-info">
           <p class="project-year">2026</p>
           <h3 class="project-title">Żółw</h3>
           <p class="project-org">FILMFORUM / KAMERALNE LATO</p>
-          <p class="project-desc">Etiuda filmowa zrealizowana w ramach projektu „ABC pracy z kamerą”. Tomasz Głąbicki znalazł się w gronie ekipy realizacjinej w roli peratora kamery.</p>
+          <p class="project-desc">Etiuda filmowa zrealizowana w ramach projektu „ABC pracy z kamerą”. Tomasz Głąbicki znalazł się w gronie uczestników tworzących film.</p>
           <a href="https://filmforum.pl/zolw-etiuda-o-hazardzie-online/" class="project-link" target="_blank" rel="noopener noreferrer">
             Zobacz oficjalną stronę projektu
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
       </article>
+
+<!-- Projekt 2: The Office Radom -->
+<article class="project-card reveal">
+  <div class="project-visual">
+    <img src="zdjecie-office.png" alt="Kadr z filmu The Office Radom, 2025" loading="lazy">
+  </div>
+  <div class="project-info">
+
+        <div class="project-info">
+          <p class="project-year">2025</p>
+          <h3 class="project-title">The Office Radom</h3>
+          <p class="project-org">FILMFORUM / KAMERALNE LATO</p>
+          <p class="project-desc">Krótki film zrealizowany w ramach warsztatów „ABC pracy z kamerą”. Tomasz Głąbicki pracował przy projekcie jako operator kamery, a w jednej ze scen pojawił się również jako statysta.</p>
+          <div class="project-links">
+            <a href="https://youtu.be/NGHvI1jADY4" class="project-link" target="_blank" rel="noopener noreferrer">
+              Zobacz film
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://filmforum.pl/zobacz-filmy-z-tegorocznych-warsztatow-abc-pracy-z-kamera/" class="project-link" target="_blank" rel="noopener noreferrer">
+              Oficjalna strona projektu
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
@@ -666,7 +735,7 @@
       <p class="section-label reveal">Social</p>
       <h2 class="section-title reveal">Instagram</h2>
       <div class="instagram-content reveal">
-        <p class="instagram-handle">tomasz.g.16</p>
+        <p class="instagram-handle">@tomasz.g.16</p>
         <p class="instagram-name">Tomasz Głąbicki</p>
         <p class="instagram-desc">Zdjęcia, projekty i aktualności.</p>
         <a href="https://www.instagram.com/tomasz.g.16/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Otwórz Instagram →</a>
@@ -683,8 +752,7 @@
         <div class="contact-item">
           <div class="meta-label">Instagram</div>
           <div class="meta-value">
-            <a href="https://www.instagram.com/tomasz.g.16/" target="_blank" rel="noopener noreferrer">@tomasz.g.16
-</a>
+            <a href="https://www.instagram.com/tomasz.g.16/" target="_blank" rel="noopener noreferrer">@tomasz.g.16</a>
           </div>
         </div>
         <div class="contact-item">
