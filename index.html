@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomasz Głąbicki — film, fotografia i projekty audiowizualne</title>
+  <meta name="description" content="Tomasz Głąbicki — twórca związany z filmem, fotografią i projektami audiowizualnymi. Radom, Polska.">
+  <meta name="keywords" content="Tomasz Głąbicki, Tomasz Głąbicki Radom, Tomasz Głąbicki film, Tomasz Głąbicki fotografia, Tomasz Głąbicki FILMFORUM, Tomasz Głąbicki Żółw, Tomasz Głąbicki Instagram">
+  <meta name="author" content="Tomasz Głąbicki">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://TWOJA-DOMENA.pl/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tomasz Głąbicki — film, fotografia i projekty audiowizualne">
+  <meta property="og:description" content="Tomasz Głąbicki — twórca związany z filmem, fotografią i projektami audiowizualnymi. Radom, Polska.">
+  <meta property="og:url" content="https://TWOJA-DOMENA.pl/">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Tomasz Głąbicki">
+
+  <!-- Twitter/X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tomasz Głąbicki — film, fotografia i projekty audiowizualne">
+  <meta name="twitter:description" content="Tomasz Głąbicki — twórca związany z filmem, fotografią i projektami audiowizualnymi. Radom, Polska.">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tomasz Głąbicki",
+    "alternateName": "tomasz.16.g",
+    "description": "Tomasz Głąbicki — twórca związany z filmem, fotografią i projektami audiowizualnymi z Radomia.",
+    "url": "https://TWOJA-DOMENA.pl/",
+    "sameAs": [
+      "https://www.instagram.com/tomasz.16.g/",
+      "https://filmforum.pl/zolw-etiuda-o-hazardzie-online/"
+    ],
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Radom",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Radom",
+        "addressCountry": "PL"
+      }
+    },
+    "jobTitle": "Twórca filmowy i fotograficzny",
+    "knowsAbout": ["film", "fotografia", "projekty audiowizualne"]
+  }
+  </script>
+
+  <style>
+    /* CSS Reset & Base */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0a0a0a;
+      --bg-elevated: #111111;
+      --text: #f5f5f5;
+      --text-muted: #a0a0a0;
+      --text-dim: #666666;
+      --accent: #c9a87c;
+      --border: #222222;
+      --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-display: 'Inter', system-ui, sans-serif;
+      --max-width: 1100px;
+      --space: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Subtle grain/noise overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Typography */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space);
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.25rem var(--space);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10, 10, 10, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .nav.scrolled {
+      border-bottom-color: var(--border);
+    }
+
+    .nav-logo {
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      transition: color 0.25s ease;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: var(--text);
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem var(--space) 4rem;
+      position: relative;
+    }
+
+    .hero-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards 0.2s;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.2rem, 10vw, 6.5rem);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.9s ease forwards 0.4s;
+    }
+
+    .hero h1 span {
+      display: block;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards 0.6s;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards 0.8s;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.6rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    .btn-primary:hover {
+      background: #e0e0e0;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--text-muted);
+      background: rgba(255,255,255,0.03);
+      transform: translateY(-2px);
+    }
+
+    /* Sections common */
+    section {
+      padding: 6rem 0;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      max-width: 540px;
+    }
+
+    .about-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      padding-top: 0.5rem;
+    }
+
+    .meta-item {
+      border-left: 1px solid var(--border);
+      padding-left: 1.25rem;
+    }
+
+    .meta-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 0.35rem;
+    }
+
+    .meta-value {
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    /* Projects */
+    .projects {
+      background: var(--bg-elevated);
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      align-items: center;
+      padding: 2rem 0;
+    }
+
+    .project-visual {
+      aspect-ratio: 16/10;
+      background: #1a1a1a;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-placeholder {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .project-placeholder span {
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      opacity: 0.4;
+    }
+
+    .project-info {
+      padding: 1rem 0;
+    }
+
+    .project-year {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 0.75rem;
+    }
+
+    .project-title {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .project-org {
+      font-size: 0.95rem;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .project-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.75rem;
+      max-width: 420px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--text);
+      border-bottom: 1px solid var(--text-dim);
+      padding-bottom: 2px;
+      transition: border-color 0.25s ease, color 0.25s ease;
+    }
+
+    .project-link:hover {
+      border-color: var(--text);
+      color: var(--accent);
+    }
+
+    .project-link svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.25s ease;
+    }
+
+    .project-link:hover svg {
+      transform: translateX(3px);
+    }
+
+    /* Instagram */
+    .instagram-content {
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .instagram-handle {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .instagram-name {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .instagram-desc {
+      color: var(--text-dim);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2.5rem;
+      max-width: 600px;
+    }
+
+    .contact-item .meta-label {
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-item a {
+      color: var(--text);
+      transition: color 0.25s ease;
+    }
+
+    .contact-item a:hover {
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      transition: color 0.25s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .project-card {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        padding: 1.5rem var(--space);
+        gap: 1.25rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      .hero {
+        padding-top: 5rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+      }
+
+      section {
+        padding: 4.5rem 0;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Tomasz Głąbicki</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#o-mnie">O mnie</a></li>
+      <li><a href="#projekty">Projekty</a></li>
+      <li><a href="#instagram">Instagram</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <p class="hero-label">Film • Fotografia • Radom</p>
+      <h1>
+        <span>Tomasz</span>
+        <span>Głąbicki</span>
+      </h1>
+      <p class="hero-subtitle">Twórca związany z filmem, fotografią i projektami audiowizualnymi.</p>
+      <div class="hero-buttons">
+        <a href="https://www.instagram.com/tomasz.16.g/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#projekty" class="btn btn-secondary">Projekty</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="o-mnie">
+    <div class="container">
+      <p class="section-label reveal">O mnie</p>
+      <h2 class="section-title reveal">O mnie</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Nazywam się Tomasz Głąbicki. Pochodzę z Radomia i interesuję się filmem, fotografią oraz tworzeniem materiałów audiowizualnych.</p>
+          <p>W 2026 roku brałem udział w realizacji etiudy filmowej „Żółw” w ramach projektu FILMFORUM / KAMERALNE LATO.</p>
+        </div>
+        <div class="about-meta reveal">
+          <div class="meta-item">
+            <div class="meta-label">Imię i nazwisko</div>
+            <div class="meta-value">Tomasz Głąbicki</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Lokalizacja</div>
+            <div class="meta-value">Radom, Polska</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Obszar</div>
+            <div class="meta-value">Film / fotografia / projekty audiowizualne</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projekty" class="projects">
+    <div class="container">
+      <p class="section-label reveal">Portfolio</p>
+      <h2 class="section-title reveal">Projekty</h2>
+      <article class="project-card reveal">
+        <div class="project-visual">
+          <div class="project-placeholder">
+            <span>◉</span>
+            Zdjęcie projektu
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-year">2026</p>
+          <h3 class="project-title">Żółw</h3>
+          <p class="project-org">FILMFORUM / KAMERALNE LATO</p>
+          <p class="project-desc">Etiuda filmowa zrealizowana w ramach projektu „ABC pracy z kamerą”. Tomasz Głąbicki znalazł się w gronie uczestników tworzących film.</p>
+          <a href="https://filmforum.pl/zolw-etiuda-o-hazardzie-online/" class="project-link" target="_blank" rel="noopener noreferrer">
+            Zobacz oficjalną stronę projektu
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section id="instagram">
+    <div class="container">
+      <p class="section-label reveal">Social</p>
+      <h2 class="section-title reveal">Instagram</h2>
+      <div class="instagram-content reveal">
+        <p class="instagram-handle">@tomasz.16.g</p>
+        <p class="instagram-name">Tomasz Głąbicki</p>
+        <p class="instagram-desc">Zdjęcia, projekty i aktualności.</p>
+        <a href="https://www.instagram.com/tomasz.16.g/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Otwórz Instagram →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="kontakt">
+    <div class="container">
+      <p class="section-label reveal">Kontakt</p>
+      <h2 class="section-title reveal">Znajdź mnie</h2>
+      <div class="contact-grid reveal">
+        <div class="contact-item">
+          <div class="meta-label">Instagram</div>
+          <div class="meta-value">
+            <a href="https://www.instagram.com/tomasz.16.g/" target="_blank" rel="noopener noreferrer">@tomasz.16.g</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="meta-label">Lokalizacja</div>
+          <div class="meta-value">Radom, Polska</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Tomasz Głąbicki · Radom, Polska</p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/tomasz.16.g/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    reveals.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
