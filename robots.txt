@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://defew1.github.io/Tomasz-G-bicki-portfolio-/
