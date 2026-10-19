@@ -138,9 +138,10 @@
 
     /* Kontakt */
     .contact { background: var(--bg2); }
-    .c-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2.5rem; max-width: 800px; }
+    .c-grid { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 2rem 4rem; }
     .c-grid dt { font-size: .8rem; color: var(--dim); margin-bottom: .3rem; }
-    .c-grid dd { font-size: 1.25rem; font-weight: 500; }
+    .c-grid dd { font-size: 1.25rem; font-weight: 500; overflow-wrap: anywhere; }
+    @media (max-width: 900px) { .c-grid { grid-template-columns: 1fr; } }
     .c-grid a { border-bottom: 1px solid var(--accent); transition: color .2s; }
     .c-grid a:hover { color: var(--accent); }
 
@@ -330,12 +331,9 @@
       <div class="wrap">
         <h2>Kontakt</h2>
         <dl class="c-grid">
-          <!-- Dodaj e-mail: odkomentuj i podmień adres
-          <div><dt>E-mail</dt><dd><a href="mailto:twoj@adres.pl">twoj@adres.pl</a></dd></div>
-          -->
+          <div><dt>E-mail</dt><dd><a href="mailto:tomaszglabicki28@gmail.com">tomaszglabicki28@gmail.com</a></dd></div>
           <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/tomasz.g.16/" target="_blank" rel="noopener noreferrer">@tomasz.g.16</a></dd></div>
           <div><dt>X</dt><dd><a href="https://x.com/tomaszglabicki" target="_blank" rel="noopener noreferrer">@tomaszglabicki</a></dd></div>
-          <div><dt>Lokalizacja</dt><dd>Radom, Polska</dd></div>
         </dl>
       </div>
     </section>
